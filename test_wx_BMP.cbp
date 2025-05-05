@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test_wx_BMP" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/test_wx_BMP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/test_wx_BMP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m64" />
+					<Add option="-DUNICODE" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-DNODEBUG" />
+					<Add directory="include" />
+					<Add directory="d:/prj/C-practice/wxWidgets-3.1.4/MinGW_GCC_810/include" />
+					<Add directory="d:/prj/C-practice/wxWidgets-3.1.4/MinGW_GCC_810/lib/gcc810_x64_dll/mswu" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+					<Add library="wxbase31u" />
+					<Add library="wxbase31u_net" />
+					<Add library="wxbase31u_xml" />
+					<Add library="wxmsw31u_core" />
+					<Add library="wxmsw31u_adv" />
+					<Add library="wxmsw31u_aui" />
+					<Add library="wxmsw31u_gl" />
+					<Add library="wxmsw31u_media" />
+					<Add library="wxmsw31u_propgrid" />
+					<Add library="wxmsw31u_ribbon" />
+					<Add library="wxmsw31u_richtext" />
+					<Add library="wxmsw31u_stc" />
+					<Add library="wxmsw31u_html" />
+					<Add library="wxmsw31u_webview" />
+					<Add library="wxmsw31u_xrc" />
+					<Add library="wxregexu" />
+					<Add library="wxexpat" />
+					<Add library="wxjpeg" />
+					<Add library="wxpng" />
+					<Add library="wxtiff" />
+					<Add library="wxzlib" />
+					<Add library="wxscintilla" />
+					<Add directory="d:/prj/C-practice/wxWidgets-3.1.4/MinGW_GCC_810/lib/gcc810_x64_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/common.hpp" />
+		<Unit filename="include/odbtn.hpp" />
+		<Unit filename="include/frame.hpp" />
+		<Unit filename="include/app.hpp" />
+		<Unit filename="include/test_wx_BMP.hpp" />
+		<Unit filename="src/frame.cpp" />
+		<Unit filename="src/app.cpp" />
+		<Unit filename="src/test_wx_BMP.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
